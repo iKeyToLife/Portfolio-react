@@ -1,0 +1,96 @@
+.home-page {
+    height: 100%;
+}
+
+h2,
+h3,
+p {
+    color: var(--white);
+}
+
+.social-links a {
+    margin-right: 20px;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--yellow);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+}
+
+
+.hexagon-container {
+    position: relative;
+    margin: 57px auto;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-triangle,
+.bottom-triangle {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    position: relative;
+}
+
+.top-triangle {
+    border-bottom: 90px solid var(--yellow);
+    border-radius: 5px;
+    transform: translate(0, 2%);
+}
+
+.middle-rectangle {
+    background-color: var(--yellow);
+    height: 130px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    border-radius: 5px;
+}
+
+.bottom-triangle {
+    border-top: 90px solid var(--yellow);
+    border-radius: 5px;
+    transform: translate(0, -2%);
+    z-index: 0;
+}
+
+.profile-photo {
+    width: 240%;
+    height: auto;
+    position: absolute;
+    top: -170%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.top-triangle::before {
+    content: '';
+    position: absolute;
+    top: 210px;
+    left: -160px;
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 100px solid rgba(191, 191, 6, 0.847);
+    filter: blur(10px);
+    z-index: 0;
+}

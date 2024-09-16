@@ -11,6 +11,7 @@ body {
   text-align: center;
   flex-grow: 1;
   width: 100%;
+  justify-content: center;
 }
 
 header {
@@ -18,16 +19,24 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom-width: 0px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 div .nav-links {
   display: flex;
+  margin-right: 30px;
+}
+
+div .nav-links .nav-item {
+  margin-left: 8px;
 }
 
 header h1 {
   position: relative;
-  margin-left: 20px;
-  left: 0px;
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-left: 30px;
 }
 
 

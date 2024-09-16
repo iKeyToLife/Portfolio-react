@@ -1,8 +1,7 @@
 export default function Home() {
     return (
         <div>
-            <h1>PORTFOLIO</h1>
-            <p></p>
+            <h2>PORTFOLIO</h2>
         </div>
     );
 }
