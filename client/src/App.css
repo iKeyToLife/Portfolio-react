@@ -26,6 +26,7 @@ header {
 div .nav-links {
   display: flex;
   margin-right: 30px;
+  user-select: none;
 }
 
 div .nav-links .nav-item {
@@ -43,6 +44,7 @@ header h1 {
 footer {
   flex-shrink: 0;
   margin-top: auto;
+  margin-bottom: 20px;
 }
 
 main {

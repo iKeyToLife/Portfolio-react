@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import myPhoto from '../assets/images/myPhoto.png';
 import './css/Home.css';
 
@@ -7,21 +7,26 @@ export default function Home() {
   return (
     <Container fluid className="home-page">
       <Row className="align-items-center min-vh-80">
-        <Col md={6} className="text-left">
-          <h2>Hello, it&apos;s me</h2>
-          <h3>Aleksandr Polbennikov</h3>
-          <p>And I&apos;m a developer</p>
-          <div className="social-links">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaLinkedin size={30} />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaGithub size={30} />
-            </a>
+        <Col md={6} className="d-flex justify-content-center align-items-center">
+          <div className="text-start text-wrapper">
+            <h2>Hello, it&apos;s me</h2>
+            <h3>Aleksandr Polbennikov</h3>
+            <p>And I&apos;m a developer</p>
+            <div className="social-links">
+              <a href="https://www.linkedin.com/in/polbennikov-aleksandr/" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FaLinkedin size={30} />
+              </a>
+              <a href="https://github.com/iKeyToLife/" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FaGithub size={30} />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100001472176157" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FaFacebook size={30} />
+              </a>
+            </div>
+            <Button variant="warning" href="https://drive.google.com/uc?export=download&id=1-JuDbvA1LTlrNpkbrmDB7rytLnd2bSxe" download className="mt-3">
+              Download CV
+            </Button>
           </div>
-          <Button variant="warning" href="/path-to-cv.pdf" download className="mt-3">
-            Download CV
-          </Button>
         </Col>
         <Col md={6} className="text-center">
           <div className="hexagon-container">

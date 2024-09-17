@@ -1,0 +1,19 @@
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
