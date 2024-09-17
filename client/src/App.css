@@ -50,3 +50,14 @@ footer {
 main {
   flex-grow: 1;
 }
+
+.project-card {
+  height: 500px;
+  width: 500px;
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+}

@@ -4,11 +4,11 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 
 function Project({ imageSrc, title, deployedLink, githubLink }) {
     return (
-        <Container className="d-flex my-4" style={{ maxWidth: '500px' }}>
+        <Container className="project-card">
             <Row className="justify-content-center">
                 <Col md={8}>
                     <Card className="text-center bg-black text-white">
-                        <Card.Img variant="top" src={imageSrc} alt={title} style={{ maxWidth: '500px', maxHeight: '350px' }} />
+                        <Card.Img className="project-img" variant="top" src={imageSrc} alt={title} />
                         <Card.Body>
                             <Card.Title>{title}</Card.Title>
                             <div className="d-flex justify-content-between mt-3">
