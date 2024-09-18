@@ -4,7 +4,7 @@ function Portfolio() {
     return (
         <div>
             <h2>PORTFOLIO</h2>
-            <div className="d-flex flex-row flex-wrap">
+            <div className="projects">
                 <Project
                     imageSrc="./images/Dungeon-Mate.png"
                     title="Dungeon Mate"
