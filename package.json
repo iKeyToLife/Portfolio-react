@@ -1,0 +1,16 @@
+{
+  "name": "15-portfolio-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --prefix ./client",
+    "start": "npm run start --prefix ./client",
+    "build": "npm run build --prefix ./client",
+    "lint": "npm run lint --prefix ./client",
+    "preview": "npm run preview --prefix ./client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
