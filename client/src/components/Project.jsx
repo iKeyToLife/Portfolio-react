@@ -6,7 +6,7 @@ function Project({ imageSrc, title, deployedLink, githubLink }) {
     return (
         <Container className="project-card">
             <Row className="justify-content-center">
-                <Col md={8}>
+                <Col>
                     <Card className="text-center bg-black text-white">
                         <Card.Img className="project-img" variant="top" src={imageSrc} alt={title} />
                         <Card.Body>

@@ -115,8 +115,24 @@ button:focus-visible {
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  max-width: 400px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    flex: 1 1 100%;
+  }
 }
