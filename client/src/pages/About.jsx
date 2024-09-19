@@ -2,7 +2,7 @@ import './css/About.css';
 
 export default function About() {
   return (
-    <div className="about-section">
+    <div className="about-section animated">
       <h2>About Me</h2>
       <p className="about-text">
         Hi, I’m Aleksandr Polbennikov, a passionate software developer with experience in building efficient and scalable web applications. My expertise lies in both frontend and backend development, with a focus on clean code, system optimization, and automation. I’m committed to delivering robust solutions and continuously improving my skills.

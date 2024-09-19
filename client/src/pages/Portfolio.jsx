@@ -2,7 +2,7 @@ import Project from '../components/Project';
 
 function Portfolio() {
     return (
-        <div>
+        <div className="animated">
             <h2>PORTFOLIO</h2>
             <div className="projects">
                 <Project

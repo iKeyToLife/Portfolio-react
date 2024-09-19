@@ -36,7 +36,7 @@ main {
 .hexagon-container {
     position: relative;
     margin: 57px auto;
-    width: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;

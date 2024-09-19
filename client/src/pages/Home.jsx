@@ -5,7 +5,7 @@ import './css/Home.css';
 
 export default function Home() {
   return (
-    <Container fluid className="home-page">
+    <Container fluid className="home-page animated">
       <Row className="align-items-center min-vh-80">
         <Col md={6} className="d-flex justify-content-center align-items-center">
           <div className="text-start text-wrapper">
@@ -13,13 +13,13 @@ export default function Home() {
             <h3>Aleksandr Polbennikov</h3>
             <p>And I&apos;m a developer</p>
             <div className="social-links">
-              <a href="https://www.linkedin.com/in/polbennikov-aleksandr/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/in/polbennikov-aleksandr/" target="_blank" rel="noopener noreferrer" className="social-link" id="linkedin">
                 <FaLinkedin size={30} />
               </a>
-              <a href="https://github.com/iKeyToLife/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/iKeyToLife/" target="_blank" rel="noopener noreferrer" className="social-link" id="github">
                 <FaGithub size={30} />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100001472176157" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.facebook.com/profile.php?id=100001472176157" target="_blank" rel="noopener noreferrer" className="social-link" id='facebook'>
                 <FaFacebook size={30} />
               </a>
             </div>

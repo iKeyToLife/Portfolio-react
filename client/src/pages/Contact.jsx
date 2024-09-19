@@ -66,12 +66,12 @@ export default function Contact() {
 
   return (
     <Container className="contact-section">
-      <div className="contact-info">
+      <div className="contact-info animated">
         <p><span>Contact with me</span></p>
         {isSubmitting && <div className="processing-message">Processing...</div>}
       </div>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form animated" onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
