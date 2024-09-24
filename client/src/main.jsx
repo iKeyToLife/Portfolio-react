@@ -12,33 +12,34 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio.jsx';
 
 
+// Creating the router with routes and nested routes
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App />,
-    errorElement: <Error />,
+    path: '/', // Root path
+    element: <App />, // App component as the main layout
+    errorElement: <Error />, // Error component to display in case of routing errors
     children: [
       {
-        index: true,
-        element: <Home />,
+        index: true, // Default route for "/"
+        element: <Home />, // Home component for the root path
       },
       {
-        path: '/About',
-        element: <About />,
+        path: '/About', // Route for the About page
+        element: <About />, // About component
       },
       {
-        path: '/Portfolio',
-        element: <Portfolio />,
+        path: '/Portfolio', // Route for the Portfolio page
+        element: <Portfolio />, // Portfolio component
       },
       {
-        path: '/Contact',
-        element: <Contact />,
+        path: '/Contact', // Route for the Contact page
+        element: <Contact />, // Contact component
       },
     ],
   },
 ]);
 
-
+// Rendering the app with the router inside the root div
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} /> // Providing the router to the app
 );

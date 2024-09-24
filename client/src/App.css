@@ -1,127 +1,175 @@
 body {
   display: flex;
+  /* Enable flexbox layout */
   flex-direction: column;
+  /* Stack children vertically */
   min-height: 100vh;
+  /* Ensure body takes at least full viewport height */
   margin: 0;
+  /* Remove default margin */
 }
 
 #root {
   display: flex;
+  /* Enable flexbox for root */
   flex-direction: column;
+  /* Stack children vertically */
   text-align: center;
+  /* Center text alignment */
   flex-grow: 1;
+  /* Allow root to grow and fill available space */
   width: 100%;
+  /* Full width */
   justify-content: center;
+  /* Center content vertically */
 }
 
 header {
   flex-shrink: 0;
+  /* Prevent header from shrinking */
   display: flex;
+  /* Enable flexbox for header */
   justify-content: space-between;
+  /* Space out children */
   border-bottom-width: 0px;
+  /* No bottom border */
   width: 100%;
+  /* Full width */
   margin-top: 10px;
+  /* Top margin */
 }
 
 div .nav-links {
   display: flex;
+  /* Flexbox for navigation links */
   margin-right: 30px;
+  /* Right margin */
   user-select: none;
+  /* Prevent text selection */
 }
 
 div .nav-links .nav-item {
   margin-left: 8px;
+  /* Left margin for nav items */
 }
 
 header h1 {
   position: relative;
+  /* Positioning context for h1 */
   font-size: 25px;
+  /* Font size for header */
   margin-bottom: 0px;
+  /* Remove bottom margin */
   margin-left: 30px;
+  /* Left margin */
 }
-
 
 footer {
   flex-shrink: 0;
+  /* Prevent footer from shrinking */
   margin-top: auto;
+  /* Push footer to the bottom */
   margin-bottom: 20px;
+  /* Bottom margin */
 }
 
 main {
   flex-grow: 1;
+  /* Allow main to grow and fill available space */
 }
 
 .project-card {
   height: 400px;
+  /* Fixed height for project cards */
   width: 400px;
+  /* Fixed width for project cards */
 }
 
 .project-img {
   width: 100%;
+  /* Full width for images */
   height: 250px;
+  /* Fixed height for images */
   object-fit: fill;
+  /* Fill the image container */
 }
 
 /* animation start */
 .animated {
   opacity: 0;
+  /* Start with hidden opacity */
   animation: fadeInMove 0.5s ease-out forwards;
+  /* Animation for fade in */
 }
 
 .animated-down {
   --translateY: -50px;
+  /* Translation for down animation */
 }
 
 .animated-up {
   --translateY: 50px;
+  /* Translation for up animation */
 }
 
 .animated-left {
   --translateX: 50px;
+  /* Translation for left animation */
 }
 
 .animated-right {
   --translateX: -50px;
+  /* Translation for right animation */
 }
 
-.animated h1,
+.animated #header-name,
 .animated #home,
 .animated #about,
 .animated #portfolio,
 .animated #contact,
 .animated .social-link {
   transform: translate(var(--translateX), var(--translateY));
+  /* Apply translation */
   animation: fadeInMove 0.2s ease-out forwards;
+  /* Animation for individual elements */
   opacity: 0;
+  /* Start with hidden opacity */
 }
 
 .animated #header-name,
 .animated #linkedin {
   animation-delay: 0.2s;
+  /* Delay for header name and LinkedIn */
 }
 
 .animated #home,
 .animated #github {
   animation-delay: 0.4s;
+  /* Delay for home and GitHub */
 }
 
 .animated #about,
 .animated #facebook {
   animation-delay: 0.6s;
+  /* Delay for about and Facebook */
 }
 
 .animated #portfolio {
   animation-delay: 0.8s;
+  /* Delay for portfolio */
 }
 
 .animated #contact {
   animation-delay: 1s;
+  /* Delay for contact */
 }
 
 @keyframes fadeInMove {
   to {
     opacity: 1;
+    /* End with full opacity */
     transform: translate(0);
+    /* Reset translation */
   }
 }
 

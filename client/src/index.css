@@ -1,20 +1,36 @@
 :root {
+  /* Font settings for sans-serif and monospace fonts */
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Basic styling defaults */
   line-height: 1.5;
+  /* Default line height */
   font-weight: 400;
+  /* Default font weight */
   --translateX: 0;
+  /* Translation variables for potential animations */
   --translateY: 0;
 
+  /* Color scheme and main colors */
   color-scheme: light dark;
+  /* Support for light and dark color schemes */
   color: rgba(255, 255, 255, 0.87);
+  /* Default text color */
   background-color: #242424;
+  /* Dark background color */
 
+  /* Font rendering properties */
   font-synthesis: none;
+  /* Disable font synthesis */
   text-rendering: optimizeLegibility;
+  /* Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  /* Smoother font on WebKit browsers */
   -moz-osx-font-smoothing: grayscale;
+  /* Smoother font on macOS */
 
+  /* Color variables */
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -22,11 +38,13 @@
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
+  /* Highlighted yellow */
   --dark-yellow: #343702;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
+  /* Standard white */
   --gray: #6c757d;
   --gray-dark: #343a40;
   --secondary: #6c757d;
@@ -34,107 +52,143 @@
   --info: #17a2b8;
   --light: #f8f9fa;
   --dark: #17171b;
+  /* Dark theme color */
 }
 
 * {
   font-family: var(--font-family-sans-serif) !important;
+  /* Apply sans-serif font globally */
 }
 
 a {
   font-weight: 500;
+  /* Semi-bold links */
   color: #646cff;
+  /* Default link color */
   text-decoration: inherit;
+  /* Remove underline from links */
 }
 
 a:hover {
   color: #535bf2;
+  /* Link color on hover */
 }
 
 body {
   margin: 0;
+  /* Reset default margin */
   display: flex;
+  /* Use flexbox for layout */
   place-items: center;
+  /* Center items vertically and horizontally */
   min-width: 320px;
+  /* Minimum width for responsiveness */
   min-height: 100vh;
+  /* Full height of the viewport */
   color: var(--white);
+  /* Set body text color */
   background: linear-gradient(to bottom, var(--dark) 0%, var(--dark) 70%, var(--dark-yellow) 100%);
+  /* Gradient background */
 }
-
 
 button {
   border-radius: 8px;
+  /* Rounded corners for buttons */
   border: 1px solid transparent;
+  /* Transparent border */
   padding: 0.6em 1.2em;
+  /* Button padding */
   font-size: 1em;
+  /* Standard button font size */
   font-weight: 500;
+  /* Semi-bold button text */
   background-color: #1a1a1a;
+  /* Button background color */
   cursor: pointer;
+  /* Pointer cursor on hover */
   transition: border-color 0.25s;
+  /* Transition effect for border color */
 }
 
 button:hover {
   border-color: var(--yellow);
-}
-
-:root {
-  --yellow: #ffc107;
-  --white: #ffffff;
+  /* Change border color on hover */
 }
 
 .nav-link {
   color: var(--white);
+  /* Default color for navigation links */
   text-decoration: none;
+  /* Remove underline */
   padding: 10px;
+  /* Padding for links */
   transition: color 0.3s ease;
+  /* Transition for color change */
 }
 
 .nav-link:hover {
   color: var(--yellow);
+  /* Color change on hover */
 }
 
 .nav-link.active {
   color: var(--yellow);
+  /* Active link color */
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+  /* Focus outline for accessibility */
 }
 
+/* Light mode styles */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
+    /* Text color in light mode */
     background-color: #ffffff;
+    /* Background color in light mode */
   }
 
   a:hover {
     color: #747bff;
+    /* Link color on hover in light mode */
   }
 
   button {
     background-color: #f9f9f9;
+    /* Button background in light mode */
   }
 }
 
 .projects {
   display: flex;
+  /* Flexbox layout for projects */
   flex-wrap: wrap;
+  /* Allow wrapping of project cards */
   justify-content: center;
+  /* Center projects horizontally */
 }
 
 .project-card {
   max-width: 400px;
+  /* Maximum width for project cards */
   margin: 10px;
+  /* Margin between cards */
 }
 
+/* Responsive design for project cards */
 @media (max-width: 768px) {
   .project-card {
     flex: 1 1 100%;
+    /* Full width on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .project-card {
     flex: 1 1 100%;
+    /* Full width on extra small screens */
   }
 }

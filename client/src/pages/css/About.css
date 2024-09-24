@@ -1,19 +1,27 @@
 .about-section {
     max-width: 800px;
+    /* Maximum width for the section */
     margin: 0 auto;
+    /* Center the section horizontally */
     padding: 20px;
+    /* Padding for inner spacing */
 }
 
 .about-text {
     font-size: 1.1em;
+    /* Slightly larger font size for readability */
     line-height: 1.6;
+    /* Increased line height for better text spacing */
 }
 
 .skills-list {
     list-style-type: none;
+    /* Remove default list bullets */
     padding-left: 0;
+    /* Remove left padding */
 }
 
 .skills-list li {
     margin-bottom: 10px;
+    /* Space between list items */
 }

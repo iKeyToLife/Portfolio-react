@@ -5,7 +5,7 @@ import './css/Home.css';
 
 export default function Home() {
   return (
-    <Container fluid className="home-page animated">
+    <Container fluid className="home-page animated animated-right">
       <Row className="align-items-center min-vh-80">
         <Col md={6} className="d-flex justify-content-center align-items-center">
           <div className="text-start text-wrapper">

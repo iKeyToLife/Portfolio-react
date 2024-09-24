@@ -1,105 +1,167 @@
 .home-page {
     height: 100%;
+    /* Full height for the home page */
 }
 
 h2,
 h3,
 p {
     color: var(--white);
+    /* Set text color to white */
 }
 
 h3 {
     font-size: 40px;
+    /* Font size for h3 headers */
 }
 
 .social-links a {
     margin-right: 20px;
+    /* Right margin for social links */
     color: var(--white);
+    /* Default color for social links */
     transition: color 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 .social-links a:hover {
     color: var(--yellow);
+    /* Change color on hover */
 }
 
 main {
     flex-grow: 1;
+    /* Allow main to grow and fill available space */
     display: flex;
+    /* Enable flexbox for main */
     justify-content: center;
+    /* Center content horizontally */
     align-items: center;
+    /* Center content vertically */
     flex-direction: column;
+    /* Stack children vertically */
     overflow: hidden;
+    /* Hide overflowing content */
     height: auto;
+    /* Auto height for main */
 }
-
 
 .hexagon-container {
     position: relative;
+    /* Positioning context for hexagon */
     margin: 57px auto;
+    /* Center container with top margin */
     width: 100%;
+    /* Full width */
     display: flex;
+    /* Enable flexbox */
     justify-content: center;
+    /* Center hexagon horizontally */
     text-align: center;
+    /* Center text */
     user-select: none;
+    /* Prevent text selection */
     -webkit-user-select: none;
+    /* Prevent text selection in WebKit */
     -moz-user-select: none;
+    /* Prevent text selection in Firefox */
     -ms-user-select: none;
+    /* Prevent text selection in IE */
     -o-user-select: none;
+    /* Prevent text selection in Opera */
 }
 
 .top-triangle,
 .bottom-triangle {
     width: 0;
+    /* No width */
     height: 0;
+    /* No height */
     border-left: 150px solid transparent;
+    /* Left triangle border */
     border-right: 150px solid transparent;
+    /* Right triangle border */
     position: relative;
+    /* Positioning context for triangles */
 }
 
 .top-triangle {
     border-bottom: 90px solid var(--yellow);
+    /* Bottom border color for top triangle */
     border-radius: 5px;
+    /* Rounded corners */
     transform: translate(0, 2%);
+    /* Slight downward translation */
 }
 
 .middle-rectangle {
     background-color: var(--yellow);
+    /* Background color for middle rectangle */
     height: 130px;
+    /* Fixed height */
     width: 300px;
+    /* Fixed width */
     position: relative;
+    /* Positioning context */
     z-index: 1;
+    /* Above triangles */
     overflow: visible;
+    /* Show overflowing content */
     border-radius: 5px;
+    /* Rounded corners */
 }
 
 .bottom-triangle {
     border-top: 90px solid var(--yellow);
+    /* Top border color for bottom triangle */
     border-radius: 5px;
+    /* Rounded corners */
     transform: translate(0, -2%);
+    /* Slight upward translation */
     z-index: 0;
+    /* Below the middle rectangle */
 }
 
 .profile-photo {
     width: 240%;
+    /* Width for profile photo */
     height: auto;
+    /* Automatic height */
     position: absolute;
+    /* Absolute positioning */
     top: -170%;
+    /* Position above the hexagon */
     left: 50%;
+    /* Center horizontally */
     transform: translate(-50%, 0);
+    /* Center adjustment */
     border-radius: 50%;
+    /* Circular shape */
     z-index: 0;
+    /* Below other elements */
 }
 
 .top-triangle::before {
     content: '';
+    /* Empty content for pseudo-element */
     position: absolute;
+    /* Absolute positioning */
     top: 210px;
+    /* Position below the triangle */
     left: -160px;
+    /* Adjust position */
     width: 0;
+    /* No width */
     height: 0;
+    /* No height */
     border-left: 160px solid transparent;
+    /* Left border for triangle */
     border-right: 160px solid transparent;
+    /* Right border for triangle */
     border-top: 100px solid rgba(191, 191, 6, 0.847);
+    /* Top border with blur effect */
     filter: blur(10px);
+    /* Apply blur effect */
     z-index: 0;
+    /* Below other elements */
 }

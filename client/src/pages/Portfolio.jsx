@@ -1,15 +1,16 @@
+// Importing the Project component
 import Project from '../components/Project';
 
 function Portfolio() {
     return (
-        <div className="animated">
+        <div className="animated"> {/* Main container with animation class */}
             <h2>PORTFOLIO</h2>
-            <div className="projects">
+            <div className="projects"> {/* Container for project components */}
                 <Project
-                    imageSrc="./images/Dungeon-Mate.png"
-                    title="Dungeon Mate"
-                    deployedLink="https://github.com/iKeyToLife/Dungeon-Mate"
-                    githubLink="https://github.com/iKeyToLife/Dungeon-Mate"
+                    imageSrc="./images/Dungeon-Mate.png" // Path to project image
+                    title="Dungeon Mate" // Project title
+                    deployedLink="https://github.com/iKeyToLife/Dungeon-Mate" // Link to the deployed project
+                    githubLink="https://github.com/iKeyToLife/Dungeon-Mate" // Link to the project's GitHub repository
                 />
                 <Project
                     imageSrc="./images/Pokemons-V2.png"
@@ -46,4 +47,5 @@ function Portfolio() {
     );
 }
 
+// Exporting Portfolio component
 export default Portfolio;

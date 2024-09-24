@@ -1,15 +1,17 @@
-import './css/About.css';
+import './css/About.css'; // Importing CSS styles for the About component
 
 export default function About() {
   return (
-    <div className="about-section animated">
-      <h2>About Me</h2>
+    <div className="about-section animated"> {/* Main container with applied styles */}
+      <h2>About Me</h2> {/* Heading for the section */}
       <p className="about-text">
-        Hi, I’m Aleksandr Polbennikov, a passionate software developer with experience in building efficient and scalable web applications. My expertise lies in both frontend and backend development, with a focus on clean code, system optimization, and automation. I’m committed to delivering robust solutions and continuously improving my skills.
+        Hi, I’m Aleksandr Polbennikov, a passionate software developer with experience in building efficient and scalable web applications.
+        My expertise lies in both frontend and backend development, with a focus on clean code, system optimization, and automation.
+        I’m committed to delivering robust solutions and continuously improving my skills.
       </p>
 
-      <h3>Frontend</h3>
-      <ul className="skills-list">
+      <h3>Frontend</h3> {/* Subheading for frontend skills */}
+      <ul className="skills-list"> {/* Unordered list for skills */}
         <li>JavaScript (ES6+)</li>
         <li>React</li>
         <li>GraphQL</li>
@@ -17,8 +19,8 @@ export default function About() {
         <li>Bootstrap</li>
       </ul>
 
-      <h3>Backend</h3>
-      <ul className="skills-list">
+      <h3>Backend</h3> {/* Subheading for backend skills */}
+      <ul className="skills-list"> {/* Unordered list for skills */}
         <li>Java (8, 11)</li>
         <li>Spring Framework (Boot, Data, Cloud)</li>
         <li>Hibernate</li>
@@ -30,8 +32,8 @@ export default function About() {
         <li>Kafka, RabbitMQ</li>
       </ul>
 
-      <h3>Tools</h3>
-      <ul className="skills-list">
+      <h3>Tools</h3> {/* Subheading for tools used */}
+      <ul className="skills-list"> {/* Unordered list for tools */}
         <li>IntelliJ IDEA, VS Code</li>
         <li>Docker</li>
         <li>Jenkins</li>

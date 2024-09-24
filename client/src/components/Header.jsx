@@ -1,12 +1,14 @@
+// Importing Link for navigation and useLocation to get the current path
 import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+  // Getting the current URL path
   const currentPage = useLocation().pathname;
 
   return (
-    <header className="main-header nav animated animated-down">
-      <h1 id="header-name">Aleksandr Polbennikov</h1>
-      <div className="nav-links">
+    <header className="main-header nav animated animated-down"> {/* Main header element */}
+      <h1 id="header-name">Aleksandr Polbennikov</h1> {/* Displaying name */}
+      <div className="nav-links"> {/* Container for navigation links */}
         <li className="nav-item" id="home">
           <Link
             to="/"
@@ -44,4 +46,5 @@ function Header() {
   );
 }
 
+// Exporting Header component
 export default Header;
