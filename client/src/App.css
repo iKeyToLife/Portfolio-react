@@ -94,6 +94,10 @@ main {
   /* Fill the image container */
 }
 
+.custom-button {
+  font-weight: 500;
+}
+
 /* animation start */
 .animated {
   opacity: 0;
