@@ -25,3 +25,16 @@
     margin-bottom: 10px;
     /* Space between list items */
 }
+
+.about-containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about-containers .about-container {
+    margin: auto;
+    margin-top: 15px;
+}

@@ -79,7 +79,7 @@ export default function Contact() {
   return (
     <Container className="contact-section"> {/* Container for the contact form */}
       <div className="contact-info animated"> {/* Contact info section */}
-        <p><span>Contact with me</span></p>
+        <p><span>Contact me</span></p>
         {isSubmitting && <div className="processing-message">Processing...</div>} {/* Processing message */}
       </div>
 
