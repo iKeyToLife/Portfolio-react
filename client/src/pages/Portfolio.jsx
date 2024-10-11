@@ -9,7 +9,7 @@ function Portfolio() {
                 <Project
                     imageSrc="./images/Dungeon-Mate.png" // Path to project image
                     title="Dungeon Mate" // Project title
-                    deployedLink="https://github.com/iKeyToLife/Dungeon-Mate" // Link to the deployed project
+                    deployedLink="https://dungeon-mate.onrender.com/" // Link to the deployed project
                     githubLink="https://github.com/iKeyToLife/Dungeon-Mate" // Link to the project's GitHub repository
                 />
                 <Project
