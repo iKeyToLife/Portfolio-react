@@ -23,8 +23,7 @@ export default function Home() {
                 <FaFacebook size={30} />
               </a>
             </div>
-            <Button variant="warning" href="https://drive.google.com/uc?export=download&id=14tLFz41g0GMtSZCprFW4ZUF5-lCklD_N
-" download className="mt-3">
+            <Button variant="warning" href="https://drive.google.com/uc?export=download&id=14tLFz41g0GMtSZCprFW4ZUF5-lCklD_N" download className="mt-3">
               Download CV
             </Button>
           </div>
